@@ -1,0 +1,16 @@
+1.  prompt("what is your name");  σε ρωτάει αυτό που γράφεις μέσα
+2.  "I'm prooooooooooooooooooo".length > 10  Λέει αν όντως είναι μεγαλύτερο σε μήκος από 10 χαρακτήρες
+3.  if ( 100 > 2 )
+     console.log("You are good at math!");
+     console.log("Just letting you know: your program got to line 6"); 
+Εάν ισχύει κάτι σου εμφανίζει κάτι άλλο
+4.  alert("You are good at math!");  πετάει μία ειδοποίηση
+5.  confirm("Will this run the first block?");  Σου βγάζει ειδοποίηση για να επιβεβαιώσεις την φράση
+6.  console.log(14 % 3);  Σου βγάζει το αποτέλεσμα της πράξης και το % χρησιμοποιήτε αντι για το / στην διαίρεση
+7.  "wonderful day".substring(3,7)  Σου λέει ποιά γράμματα υπάρχουν στο σημείο που όρισες π.χ στο παράδειγμα είναι το "derf"
+8.  var myName ="George"; <- ορίζω μεταβλητή π.χ. όταν βάζω το var myName να ενοείται το George
+     console.log(myName); <- εδώ λέω να μου εμφανίσει το όνομα μου
+     myName = "Ge"; <- εδώ ξαναλλάζω  το όνομά μου
+     console.log(myName); <- και εδώ λέω πάλι να μου το εμφανίσει
+9.  var FIRSTvariable = window.prompt("PLEASE FILL IN YOUR NAME")
+alert("Your name is " + FIRSTvariable + ".")
