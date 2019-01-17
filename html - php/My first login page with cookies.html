@@ -1,0 +1,68 @@
+<html>
+<style>
+    h1 {
+        color: #0000ff
+    }
+</style>
+
+<head>
+    <title>
+       2 ergastiriaki askisi
+    </title>
+	
+	<script>
+    function checkit() {
+        var name = document.myForm.onoma.value;
+        var password = document.myForm.kwdikos.value;
+        if (name == '' || password == '') {
+            alert("Username or password value is null");
+            return (false);
+        }
+        else {
+            window.location.href = "http://www.cs.teikal.gr";
+            window.open("http://www.cs.teikal.gr");
+            return (true);
+        }
+    }
+	
+	
+</script>
+</head>
+
+<body>
+    <h1>
+        My first page
+    </h1>
+    homepage:
+    <a href="http://www.cs.teikal.gr">http://www.cs.teikal.gr</a>
+    <br>
+    <br> My personal data:
+    <br>
+    <ul>
+        <li>
+            <b>George Vagdas</b>
+        </li>
+        <li>
+            <i>AM: 2015008</i>
+        </li>
+        <li>
+            <u>Tmima Mixanikon Pliroforikis TE</u>
+        </li>
+    </ul>
+    Login:
+     <form name="myForm" onsubmit="checkit()">
+        username:
+        <input type="text" name="onoma">
+        password:
+        <input type="password" name="kwdikos">
+        <br>
+        <input type="radio" name="epilogh" value="epilogh1" checked> student
+        <input type="radio" name="epilogh" value="epilogh2"> professor
+        <br>
+        <input type="submit" value="Next">
+    </form>
+	
+</body>
+
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ergasia 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+
+        function validateForm() {
+		
+            if (document.myForm.username.value == '' || document.myForm.password.value == '') {
+                alert('Form must be fully filled...\nPress OK to try again!');
+                return;
+            }
+            setCookie('username', document.myForm.username.value);
+            if (document.myForm.property[0].checked == true) {
+                setCookie('property', document.myForm.property[0].value);
+            }
+            else {
+                setCookie('property', document.myForm.property[1].value);
+            }
+            setCookie('visits', '0');
+
+        }
+        function setCookie(cookieName, cookieValue) {
+            document.cookie = cookieName + '=' + cookieValue;
+			
+        }
+
+
+        function getCookie(cookieName) {
+            var nameEQ = cookieName + '=';
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+				}
+                if (c.indexOf(nameEQ) != -1) {
+				return c.substring(nameEQ.length);
+				}
+            }
+            return null;
+        }
+
+        function showCookies() {
+			
+            if (document.cookie != '') {
+			
+                var visits = parseInt(getCookie('visits'));
+                visits++;
+                setCookie('visits', visits.toString());
+				alert('Hello ' + getCookie('username') + '. You are a ' + getCookie('property') + ' and this is your ' + getCookie('visits') + ' visit.');
+               
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="showCookies()">
+    <h1>Please login:</h1>
+    <form name="myForm" onsubmit="validateForm()" action="ergasia4.php" method="post">
+        <b>*</b>Username:
+        <input type="text" name="username">
+        <br>
+        <br>
+        <b>*</b>Password:&nbsp;
+        <input type="password" name="password">
+        <br>
+        <br>
+        <input type="radio" name="property" value="student" checked> Student
+        <input type="radio" name="property" value="professor"> Professor
+        <br>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+
+</html>
