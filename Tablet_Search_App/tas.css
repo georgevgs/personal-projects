@@ -38,3 +38,11 @@ img.man {
     height: 3%;
     width: 3%;
   }  
+
+img.back{  
+  vertical-align: middle;
+}  
+
+img.logout{
+  vertical-align: middle;
+}
