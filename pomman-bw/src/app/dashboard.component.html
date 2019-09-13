@@ -1,0 +1,8 @@
+<h2>Is this the real dash?</h2>
+<div>
+  <button (click)="onSwitchState()">Yes or No</button>
+</div>
+<p [textContent]="loadState"></p>
+<div>
+  <input type="text" [(ngModel)]="loadState">
+</div>
