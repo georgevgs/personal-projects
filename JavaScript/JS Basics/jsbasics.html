@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1 id="heading">Learn Javascript</h1>
+        <p>JS Lesson</p>
+    </div>
+
+    <div class="container">
+    <h1 id="time"></h1>
+
+    <button onclick="doClick()">Click me</button>
+    <button onclick="changeText(this)">Click me</button>
+    <button onclick="showDate()">Show date</button>
+    </div>
+
+    <form method="post" action="something.php" name="myForm" onsubmit="return validateForm()">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" id="firstName"/>
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName" id="lastName"/>
+        </div>
+        <br>
+        <div>
+            <label>Background</label>
+            <select name="background" id="background" onchange="changeBackground(this)">
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Submit"/> 
+    </form>
+</body>    
