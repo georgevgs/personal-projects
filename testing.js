@@ -10,4 +10,6 @@ const last = (array, n) => {
 
 console.log(last([7, 9, 0, -2]));
 console.log(last([7, 9, 0, -2],3));
-console.log(last([7, 9, 0, -2], 7));
+console.log(last([7, 9, 0, -2],7));
+console.log(last([7, 9, 0, -2]),9);
+console.log(last([7, 9, 0, -2],7));
