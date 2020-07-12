@@ -27,6 +27,19 @@
     display: flex;
     flex-direction: column;
     padding-top: 7px;
+    padding-right: 78%; 
+  }
+  .users .selected-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+    padding-right: 14px; 
+  }  
+
+  .users .question-circle{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
   }
 
   .users .users-avatar {
@@ -38,6 +51,16 @@
 .bi-person-circle {    
     width: 32px;  
     height: 32px;
+  }
+
+.bi-question-circle{
+  width: 20px;  
+  height: 20px;
+}
+
+/* Check box */
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #39628D;
   }
 
 /* Switch box*/
