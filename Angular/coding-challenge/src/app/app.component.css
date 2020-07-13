@@ -130,22 +130,31 @@
     background-color: #354069;
     width: 34px;
     height: 24px;
+    text-align: center;
+    padding-top: 4px;
   }
 
   .CR {
     background-color: #F2AC57;
     width: 34px;
     height: 24px;
+    text-align: center;
+    padding-top: 4px;
   }
 
   .SU {
     background-color: #979797;
     width: 34px;
     height: 24px;
+    text-align: center;
+    padding-top: 4px;
   }
 
   .EM {
     background-color: #E17878;
     width: 34px;
     height: 24px;
+    text-align: center;
+    padding-top: 4px;
+
   }
