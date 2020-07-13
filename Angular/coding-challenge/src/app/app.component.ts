@@ -17,10 +17,13 @@ export class AppComponent {
 
   modeSubject = new Subject<boolean>();
   endpoint = 'http://api.front.challenge.dev.monospacelabs.com';
+  //http: HttpClient;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    //this.http = HttpClient;
+   }
 
-  /* getUsers(): Observable<HttpResponse<>> {
+  /* fetchUsers(): Observable<HttpResponse<>> {
     return this.http.get(
       this.endpoint, { observe: 'response' });
     } */
