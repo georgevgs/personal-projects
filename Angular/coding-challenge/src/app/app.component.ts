@@ -16,16 +16,11 @@ export class AppComponent {
   title = 'coding-challenge';
 
   modeSubject = new Subject<boolean>();
-  endpoint = 'http://api.front.challenge.dev.monospacelabs.com';
-  //http: HttpClient;
 
-  constructor(private http: HttpClient) {
-    //this.http = HttpClient;
-   }
+  constructor(private http: HttpClient) {}
 
-  /* fetchUsers(): Observable<HttpResponse<>> {
-    return this.http.get(
-      this.endpoint, { observe: 'response' });
-    } */
+  public fetchData (){
+    this.http.get("http://api.front.challenge.dev.monospacelabs.com");
+  }
   
 }
