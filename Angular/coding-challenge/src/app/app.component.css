@@ -127,7 +127,7 @@
   /* Text Boxes */
 
   .CO {
-    background-color: #354069;
+    background-color: #8A98CA;
     width: 34px;
     height: 24px;
     text-align: center;
@@ -143,7 +143,15 @@
   }
 
   .SU {
-    background-color: #979797;
+    background-color: #B9E5E5;
+    width: 34px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+  }
+
+  .SUgrey {
+    background-color: #CACACA;
     width: 34px;
     height: 24px;
     text-align: center;
