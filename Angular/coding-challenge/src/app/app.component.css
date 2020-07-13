@@ -123,3 +123,29 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* Text Boxes */
+
+  .CO {
+    background-color: #354069;
+    width: 34px;
+    height: 24px;
+  }
+
+  .CR {
+    background-color: #F2AC57;
+    width: 34px;
+    height: 24px;
+  }
+
+  .SU {
+    background-color: #979797;
+    width: 34px;
+    height: 24px;
+  }
+
+  .EM {
+    background-color: #E17878;
+    width: 34px;
+    height: 24px;
+  }
