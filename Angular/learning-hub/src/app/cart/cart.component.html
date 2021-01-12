@@ -1,8 +1,14 @@
-<input type="text" [(ngModel)]="newItem">
-<button (click)="addItem()">Add Items</button>
+<input type="text" [(ngModel)]="newItem" />
+<button
+  (click)="addItem()"
+  class="btn"
+  [ngClass]="{ 'btn-primary': newItem !== '', 'btn-default': newItem === '' }"
+>
+  Add Items
+</button>
 
-<hr>
+<hr />
 
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+  <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
 </ul>
