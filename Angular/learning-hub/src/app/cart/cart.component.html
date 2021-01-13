@@ -7,8 +7,16 @@
   Add Items
 </button>
 
+<p *ngIf="newItem === ''">Please enter a value</p>
+
 <hr />
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+  <li
+    class="list-group-item"
+    *ngFor="let item of items; let i = index"
+    [ngStyle]="{ backgroundColor: i % 2 === 0 ? 'orange' : 'purple' }"
+  >
+    {{ item }}
+  </li>
 </ul>
