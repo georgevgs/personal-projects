@@ -12,6 +12,7 @@ export class CreateCharacterComponent implements OnInit {
     { display: 'Light', value: 'light' },
     { display: 'Dark', value: 'dark' },
   ];
+  defaultName = 'Obi-Wan';
 
   swService: StarWarsService;
 

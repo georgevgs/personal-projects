@@ -6,9 +6,14 @@
       id="name"
       name="name"
       class="form-control"
-      ngModel
+      [ngModel]="defaultName"
+      autocomplete="off"
       required
+      #nameCtrl="ngModel"
     />
+    <span class="help-block" *ngIf="nameCtrl.invalid && nameCtrl.touched"
+      >Please enter name</span
+    >
   </div>
   <div class="form-group">
     <label for="side">Choose Side</label>
@@ -18,5 +23,7 @@
       </option>
     </select>
   </div>
-  <button class="btn btn-primary" type="submit">Add Character</button>
+  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+    Add Character
+  </button>
 </form>
