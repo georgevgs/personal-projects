@@ -9,6 +9,13 @@ import { StarWarsService } from './services/star-wars.service';
 import { LogService } from './services/log.service';
 import { CreateCharacterComponent } from './create-character/create-character.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { RouterModule } from '@angular/router';
+
+const routes = [
+  { path: '', component: TabsComponent },
+  { path: 'new-character', component: CreateCharacterComponent },
+];
 
 @NgModule({
   declarations: [
@@ -16,13 +23,11 @@ import { FormsModule } from '@angular/forms';
     TabsComponent,
     ListComponent,
     ItemComponent,
-    CreateCharacterComponent
+    CreateCharacterComponent,
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   providers: [StarWarsService, LogService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
