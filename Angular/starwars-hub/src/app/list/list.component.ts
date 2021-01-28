@@ -21,10 +21,13 @@ export class ListComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.swService.fetchCharacters();
+    //tab side
     this.activatedRoute.params.subscribe((params) => {
       this.characters = this.swService.getCharacters(params.side);
       this.loadedSide = params.side;
     });
+    //character side
     this.subscription = this.swService.charactersChanged.subscribe(() => {
       this.characters = this.swService.getCharacters(this.loadedSide);
     });
